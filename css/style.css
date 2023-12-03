@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400&family=Noto+Sans:wght@700&family=Poppins:wght@400;600&family=Ubuntu&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    top: 0;
+    position: sticky;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow:gray 5px 5px 5px;
+}
+
+.logoTxt{
+    font-size: 2.25rem;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    padding: 0 1rem;
+}
+
+.logoTxt a{
+    text-decoration: none;
+    color: black;
+}
+
+.leftNav{
+    width: 50vw;
+}
+.rightNav{
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+}
+
+.navlist{
+    list-style: none;
+    display: flex;
+    border-right: 3px solid blue;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.navlist li{
+    padding: 0 1rem;
+    font-size: large;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: rgb(0, 0, 120);
+    font-family:'Ubuntu';
+    font-weight: 600;
+    transition-duration: 200ms;
+}
+
+.navlist li a:hover{
+    color: rgb(93, 93, 255);
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    height: 70vh;
+    display: flex;
+}
+
+.sectionLeft{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    padding: 2rem 5rem;
+}
+
+.left{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45vw;
+}
+
+.right{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    background-image: url(../img/about-2.jpeg);
+    background-size: cover;
+    clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+.sectionRight{
+    background-image: url(../img/bg.jpg);
+    clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+    background-size: cover;
+    height: 60vh;
+    width: 60vw;
+    padding: 2rem;
+    position: relative;
+}
+
+.headingTxt{
+    font-size: 3rem;
+    font-family: 'Poppins';
+    color: rgb(0, 0, 80);
+}
+
+.intro{
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: rgb(0, 0, 160);
+}
+
+.text{
+    font-size: 1rem;
+    font-family: 'Poppins';
+    padding-top: 1.5rem;
+}
+
+.skills{
+    text-align: start;
+}
+
+.projects{
+    text-align: end;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+    padding: 0.4rem 0.75rem;
+    border-radius: 5px;
+    transition-duration: 200ms;
+}
+
+.m1{
+    background-color: black; 
+    margin-right: 1rem;
+}
+.m2{
+    background-color: gray;
+}
+
+.m3{
+    background-color: black;
+}
+
+.m4{
+    background-color: white;
+    border: none;
+}
+
+.m1:hover{
+    background-color: rgb(43, 43, 43);
+}
+.m2:hover{
+    background-color: rgb(83, 83, 83);
+}
+.m3:hover{
+    background-color: rgb(255, 211, 78);
+}
+
+.m4:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+.cardContainer{
+    display: flex;
+    column-gap: 1rem;
+}   
+
+.cardContainerProject{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}   
+
+.card{
+    background-color: rgb(228, 228, 228);
+    padding: 3rem;
+    border-radius: 8px;
+    transition-duration: 300ms;
+}
+
+.card:hover{
+    background-color: rgb(255, 211, 78);
+}
+
+.cardHead{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+}
+
+.cardbody{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin: 1rem;
+}
+
+.cardBtn{
+    background-color: blueviolet;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/about.jpg);
+    padding: 2rem ;
+    width: 70vw;
+}
+
+.bottom{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 2rem;
+}
+
+.hamburger{
+    display: none;
+    row-gap: 0.5rem;
+    padding: 10px;
+    height: auto;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 100ms;
+}
+
+.hamburger:focus{
+    outline: 4px solid rgb(179, 179, 179);
+}
+
+.line{
+    height: 4px;
+    width: 35px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:1000px){
+    .cardContainer{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 1rem;
+    } 
+    .logoTxt{
+        font-size: 2rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+        row-gap: 2rem;
+    }  
+    .navlist{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .leftNav{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionLeft{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+    .sectionRight{
+        display: none;
+    }
+    .headingTxt{
+        font-size: 2.5rem;
+    }
+    .left{
+        width: auto;
+        height: auto;
+    }
+    .right{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rightNav{
+        display: none;
+        width: auto;
+    }
+}
+
+
